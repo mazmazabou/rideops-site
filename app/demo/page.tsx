@@ -38,12 +38,12 @@ export default function DemoPage() {
                   <div className="h-3 w-3 rounded-full bg-green-400" />
                 </div>
                 <div className="flex-1 rounded-md bg-white px-4 py-1 text-center text-sm text-gray-500">
-                  demo.ride-ops.com
+                  rideops-app-production.up.railway.app
                 </div>
               </div>
               {/* Iframe */}
               <iframe
-                src="https://demo.ride-ops.com"
+                src="https://rideops-app-production.up.railway.app/demo.html"
                 title="RideOps Demo"
                 className="h-[600px] w-full border-0 md:h-[700px]"
                 loading="lazy"
