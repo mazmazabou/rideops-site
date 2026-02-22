@@ -105,12 +105,12 @@ export default function Home() {
             <h2 className="text-3xl font-heading text-white md:text-4xl">
               Ready to modernize your campus transportation?
             </h2>
-            <p className="mt-4 text-lg text-emerald-100">
+            <p className="mt-4 text-lg text-blue-100">
               Join the universities already using RideOps to move their campuses forward.
             </p>
             <Link
               href="/demo"
-              className="mt-8 inline-block rounded-lg bg-white px-8 py-3.5 text-base font-semibold text-brand-primary transition-colors hover:bg-emerald-50"
+              className="mt-8 inline-block rounded-lg bg-white px-8 py-3.5 text-base font-semibold text-brand-primary transition-colors hover:bg-blue-50"
             >
               Request a Demo
             </Link>

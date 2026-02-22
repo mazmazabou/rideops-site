@@ -37,11 +37,11 @@ export default function AboutPage() {
         <div className="mx-auto max-w-4xl px-6">
           <AnimateOnScroll>
             <div className="flex flex-col items-center gap-8 md:flex-row">
-              <div className="flex h-40 w-40 flex-shrink-0 items-center justify-center rounded-full bg-brand-light">
-                <span className="text-5xl font-heading text-brand-primary">
-                  MA
-                </span>
-              </div>
+              <img
+                src="/headshot.png"
+                alt="Mazen Abouelela"
+                className="h-40 w-40 flex-shrink-0 rounded-full object-cover"
+              />
               <div>
                 <h1 className="text-3xl font-heading text-brand-charcoal md:text-4xl">
                   Built by Someone Who Lived It
@@ -62,7 +62,7 @@ export default function AboutPage() {
                   transportation from day one.
                 </p>
                 <a
-                  href="https://www.linkedin.com/in/mazenabouelela"
+                  href="https://www.linkedin.com/in/mazen-abouelela-88a559205/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-4 inline-block text-sm font-medium text-brand-primary hover:underline"

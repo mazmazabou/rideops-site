@@ -6,9 +6,9 @@
 }
 
 @theme inline {
-  --color-brand-primary: #059669;
-  --color-brand-dark: #064e3b;
-  --color-brand-light: #d1fae5;
+  --color-brand-primary: #4682B4;
+  --color-brand-dark: #36648B;
+  --color-brand-light: #EEF3F8;
   --color-brand-charcoal: #1a1a2e;
   --font-heading: var(--font-dm-serif-display);
   --font-body: var(--font-dm-sans);
