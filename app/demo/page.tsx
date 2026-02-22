@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
+import DemoGallery from "@/components/DemoGallery";
+import { Play } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Demo",
@@ -11,6 +13,7 @@ export const metadata: Metadata = {
 export default function DemoPage() {
   return (
     <>
+      {/* Hero */}
       <section className="bg-gradient-to-b from-brand-light/40 to-white py-16 md:py-24">
         <div className="mx-auto max-w-4xl px-6 text-center">
           <AnimateOnScroll>
@@ -18,37 +21,18 @@ export default function DemoPage() {
               See RideOps in Action
             </h1>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
-              Explore the live demo below to experience how RideOps streamlines
-              campus transportation — from ride requests to dispatch to delivery.
+              Browse screenshots from every role in the platform — office
+              dispatch, driver mobile app, and rider booking experience.
             </p>
           </AnimateOnScroll>
         </div>
       </section>
 
+      {/* Screenshot Gallery */}
       <section className="py-12 md:py-20">
         <div className="mx-auto max-w-6xl px-6">
           <AnimateOnScroll>
-            {/* Browser chrome frame */}
-            <div className="overflow-hidden rounded-xl border border-gray-200 shadow-2xl">
-              {/* Title bar */}
-              <div className="flex items-center gap-3 border-b border-gray-200 bg-gray-100 px-4 py-3">
-                <div className="flex gap-2">
-                  <div className="h-3 w-3 rounded-full bg-red-400" />
-                  <div className="h-3 w-3 rounded-full bg-yellow-400" />
-                  <div className="h-3 w-3 rounded-full bg-green-400" />
-                </div>
-                <div className="flex-1 rounded-md bg-white px-4 py-1 text-center text-sm text-gray-500">
-                  demo.ride-ops.com
-                </div>
-              </div>
-              {/* Iframe */}
-              <iframe
-                src="https://demo.ride-ops.com/demo.html"
-                title="RideOps Demo"
-                className="h-[600px] w-full border-0 md:h-[700px]"
-                loading="lazy"
-              />
-            </div>
+            <DemoGallery />
           </AnimateOnScroll>
 
           <AnimateOnScroll delay={0.2}>
@@ -62,6 +46,31 @@ export default function DemoPage() {
               >
                 Schedule a live demo &rarr;
               </Link>
+            </div>
+          </AnimateOnScroll>
+        </div>
+      </section>
+
+      {/* Video Walkthrough Placeholder */}
+      <section className="bg-gray-50 py-16 md:py-20">
+        <div className="mx-auto max-w-4xl px-6">
+          <AnimateOnScroll>
+            <div className="text-center">
+              <h2 className="text-3xl font-heading text-brand-charcoal">
+                Video Walkthrough
+              </h2>
+              <p className="mx-auto mt-3 max-w-xl text-gray-600">
+                A narrated tour of the entire platform is coming soon.
+              </p>
+            </div>
+
+            <div className="mt-10 flex aspect-video items-center justify-center rounded-2xl border-2 border-dashed border-gray-300 bg-white">
+              <div className="text-center">
+                <Play className="mx-auto h-12 w-12 text-gray-300" />
+                <p className="mt-3 text-sm font-medium text-gray-400">
+                  Coming Soon
+                </p>
+              </div>
             </div>
           </AnimateOnScroll>
         </div>
