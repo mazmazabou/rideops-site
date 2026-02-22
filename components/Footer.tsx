@@ -15,13 +15,18 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-12">
         <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
           <div className="flex flex-col gap-4">
-            <Image
-              src="/logo.svg"
-              alt="RideOps"
-              width={120}
-              height={28}
-              className="brightness-0 invert"
-            />
+            <div className="flex items-center gap-2">
+              <Image
+                src="/logoWithoutBackground.png"
+                alt="RideOps"
+                width={24}
+                height={24}
+                className="object-contain brightness-0 invert"
+              />
+              <span style={{fontWeight: 800, fontSize: '16px', letterSpacing: '-0.3px', color: 'white'}}>
+                RideOps
+              </span>
+            </div>
             <p className="max-w-xs text-sm text-emerald-200/80">
               Modern campus transportation management for universities that move
               forward.

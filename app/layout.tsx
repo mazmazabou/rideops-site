@@ -25,7 +25,11 @@ export const metadata: Metadata = {
   description:
     "RideOps is a multi-tenant SaaS platform that modernizes campus transportation with real-time dispatch, ride tracking, and white-label configurability.",
   icons: {
-    icon: "/favicon.svg",
+    icon: '/logoWithBackground.png',
+    apple: '/logoWithBackground.png',
+  },
+  openGraph: {
+    images: ['/logoWithBackground.png'],
   },
 };
 

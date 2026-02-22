@@ -37,11 +37,16 @@ export default function AboutPage() {
         <div className="mx-auto max-w-4xl px-6">
           <AnimateOnScroll>
             <div className="flex flex-col items-center gap-8 md:flex-row">
-              <img
-                src="/headshotAtUSC.png"
-                alt="Mazen Abouelela"
-                className="h-40 w-40 flex-shrink-0 rounded-full object-cover"
-              />
+              <div className="relative flex-shrink-0">
+                <img
+                  src="/headshotAtUSC.png"
+                  alt="Mazen Abouelela"
+                  className="h-40 w-40 rounded-full object-cover"
+                />
+                <div className="absolute bottom-1 right-1 w-10 h-10 rounded-full overflow-hidden shadow-md border-2 border-white">
+                  <img src="/logoWithBackground.png" className="w-full h-full object-cover" />
+                </div>
+              </div>
               <div>
                 <h1 className="text-3xl font-heading text-brand-charcoal md:text-4xl">
                   Built by Someone Who Lived It

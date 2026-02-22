@@ -22,7 +22,12 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-gray-200/60 bg-white/80 backdrop-blur-md">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <Link href="/" className="flex-shrink-0">
-          <Image src="/logo.svg" alt="RideOps" width={140} height={32} priority />
+          <div className="flex items-center gap-2">
+            <Image src="/logoWithoutBackground.png" alt="RideOps" width={28} height={28} priority className="object-contain" />
+            <span style={{fontWeight: 800, fontSize: '18px', letterSpacing: '-0.3px'}}>
+              <span style={{color: '#4682B4'}}>Ride</span><span style={{color: '#1a1a2e'}}>Ops</span>
+            </span>
+          </div>
         </Link>
 
         {/* Desktop nav */}
