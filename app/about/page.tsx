@@ -38,7 +38,7 @@ export default function AboutPage() {
           <AnimateOnScroll>
             <div className="flex flex-col items-center gap-8 md:flex-row">
               <img
-                src="/headshot.png"
+                src="/headshotAtUSC.png"
                 alt="Mazen Abouelela"
                 className="h-40 w-40 flex-shrink-0 rounded-full object-cover"
               />
