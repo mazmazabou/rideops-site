@@ -38,7 +38,7 @@ const tabs = [
     icon: Smartphone,
     layout: "mobile" as const,
     screenshots: [
-      { src: "/demo/driver-home-available.png", caption: "See available rides ranked by urgency" },
+      { src: "/demo/driver-clock-in.png", caption: "Clock in when you're ready to drive" },
       { src: "/demo/driver-ride-scheduled.png", caption: "One tap to start your next ride" },
       { src: "/demo/driver-ride-on-way.png", caption: "Live updates as you drive to the rider" },
       { src: "/demo/driver-grace-timer.png", caption: "5-minute grace timer protects drivers" },
