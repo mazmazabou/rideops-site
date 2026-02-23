@@ -20,16 +20,16 @@ const tabs = [
     label: "Office Dashboard",
     icon: Monitor,
     layout: "desktop" as const,
-    hero: { src: "/demo/18_office_hero_1280.png", caption: "Office dashboard overview — real-time ride status at a glance" },
+    hero: { src: "/demo/desktop-dispatch-hero.png", caption: "Command center — every ride, every driver, one screen" },
     screenshots: [
-      { src: "/demo/01_login_desktop.png", caption: "Desktop login screen" },
-      { src: "/demo/03_office_dispatch.png", caption: "Live dispatch board with ride assignments" },
-      { src: "/demo/04_office_rides.png", caption: "Ride management — search, filter, and track all rides" },
-      { src: "/demo/05_office_staff.png", caption: "Staff directory and role management" },
-      { src: "/demo/06_office_fleet.png", caption: "Fleet overview with vehicle status" },
-      { src: "/demo/07_office_analytics.png", caption: "Analytics dashboard with ride metrics" },
-      { src: "/demo/08_office_settings.png", caption: "System settings and configuration" },
-      { src: "/demo/09_office_collapsed_sidebar.png", caption: "Compact sidebar for a wider workspace" },
+      { src: "/demo/desktop-dispatch-board.png", caption: "Approve or deny ride requests in real time" },
+      { src: "/demo/desktop-rides-active.png", caption: "Track every ride from request to completion" },
+      { src: "/demo/desktop-rides-calendar.png", caption: "Weekly calendar view of all scheduled rides" },
+      { src: "/demo/desktop-staff-shifts.png", caption: "Staff scheduling with shift coverage at a glance" },
+      { src: "/demo/desktop-analytics.png", caption: "Built-in analytics — no external tools needed" },
+      { src: "/demo/desktop-wrapped.png", caption: "Semester recap your team will want to share" },
+      { src: "/demo/desktop-fleet.png", caption: "Fleet tracking with maintenance alerts" },
+      { src: "/demo/desktop-user-management.png", caption: "Manage riders, drivers, and staff from one place" },
     ],
   },
   {
@@ -38,10 +38,12 @@ const tabs = [
     icon: Smartphone,
     layout: "mobile" as const,
     screenshots: [
-      { src: "/demo/02_login_mobile.png", caption: "Mobile login screen" },
-      { src: "/demo/10_driver_home.png", caption: "Driver home — upcoming rides and quick actions" },
-      { src: "/demo/11_driver_my_rides.png", caption: "My rides list with status indicators" },
-      { src: "/demo/12_driver_account.png", caption: "Driver account and profile settings" },
+      { src: "/demo/driver-home-available.png", caption: "See available rides ranked by urgency" },
+      { src: "/demo/driver-ride-scheduled.png", caption: "One tap to start your next ride" },
+      { src: "/demo/driver-ride-on-way.png", caption: "Live updates as you drive to the rider" },
+      { src: "/demo/driver-grace-timer.png", caption: "5-minute grace timer protects drivers" },
+      { src: "/demo/driver-my-rides.png", caption: "Today's rides at a glance" },
+      { src: "/demo/driver-account.png", caption: "Quick profile and password management" },
     ],
   },
   {
@@ -50,11 +52,12 @@ const tabs = [
     icon: User,
     layout: "mobile" as const,
     screenshots: [
-      { src: "/demo/13_rider_my_rides.png", caption: "My rides — upcoming and past bookings" },
-      { src: "/demo/14_rider_book_step1.png", caption: "Step 1: Select pickup location" },
-      { src: "/demo/15_rider_book_step2.png", caption: "Step 2: Choose date and time" },
-      { src: "/demo/16_rider_book_step3.png", caption: "Step 3: Confirm ride details" },
-      { src: "/demo/17_rider_history.png", caption: "Ride history with trip details" },
+      { src: "/demo/rider-book-step1.png", caption: "Pick your route from campus locations" },
+      { src: "/demo/rider-book-step2.png", caption: "Choose your date and time" },
+      { src: "/demo/rider-book-step3.png", caption: "Review and confirm in one tap" },
+      { src: "/demo/rider-my-rides.png", caption: "Track all your active rides" },
+      { src: "/demo/rider-grace-timer.png", caption: "Know exactly how long your driver waits" },
+      { src: "/demo/rider-history.png", caption: "Full ride history with trip details" },
     ],
   },
 ] as const;
@@ -264,7 +267,7 @@ function MobileGallery({
   onOpen: (idx: number) => void;
 }) {
   return (
-    <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4">
+    <div className="grid grid-cols-2 justify-items-center gap-6 sm:grid-cols-3">
       {screenshots.map((shot, i) => (
         <div key={shot.src}>
           <PhoneMockup className="cursor-pointer transition-transform hover:scale-[1.02]">
