@@ -89,7 +89,7 @@ function PhoneMockup({ children, className }: { children: React.ReactNode; class
         <div className="flex justify-center bg-gray-800 py-1.5">
           <div className="h-4 w-20 rounded-full bg-gray-900" />
         </div>
-        <div className="overflow-hidden bg-white">{children}</div>
+        <div className="overflow-hidden bg-white" style={{ aspectRatio: "390/844" }}>{children}</div>
         {/* Home bar */}
         <div className="flex justify-center bg-gray-800 py-2">
           <div className="h-1 w-16 rounded-full bg-gray-600" />
