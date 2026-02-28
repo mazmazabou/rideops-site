@@ -20,16 +20,14 @@ const tabs = [
     label: "Office Dashboard",
     icon: Monitor,
     layout: "desktop" as const,
-    hero: { src: "/demo/desktop-dispatch-hero.png", caption: "Command center — every ride, every driver, one screen" },
+    hero: { src: "/demo/desktop-dispatch-hero.png", caption: "Live dispatch — KPIs, pending queue, and driver time grid" },
     screenshots: [
-      { src: "/demo/desktop-dispatch-board.png", caption: "Approve or deny ride requests in real time" },
-      { src: "/demo/desktop-rides-active.png", caption: "Track every ride from request to completion" },
-      { src: "/demo/desktop-rides-calendar.png", caption: "Weekly calendar view of all scheduled rides" },
-      { src: "/demo/desktop-staff-shifts.png", caption: "Staff scheduling with shift coverage at a glance" },
-      { src: "/demo/desktop-analytics.png", caption: "Built-in analytics — no external tools needed" },
-      { src: "/demo/desktop-wrapped.png", caption: "Semester recap your team will want to share" },
-      { src: "/demo/desktop-fleet.png", caption: "Fleet tracking with maintenance alerts" },
-      { src: "/demo/desktop-user-management.png", caption: "Manage riders, drivers, and staff from one place" },
+      { src: "/demo/desktop-rides-active.png", caption: "Full ride log with status filters and one-click actions" },
+      { src: "/demo/desktop-staff-shifts.png", caption: "Weekly shift calendar with drag-and-drop scheduling" },
+      { src: "/demo/desktop-analytics.png", caption: "Operational analytics — rides, completion rates, peak hours" },
+      { src: "/demo/desktop-fleet.png", caption: "Fleet management with maintenance tracking" },
+      { src: "/demo/desktop-user-management.png", caption: "User management for riders, drivers, and staff" },
+      { src: "/demo/desktop-business-rules.png", caption: "Configurable business rules per university" },
     ],
   },
   {
@@ -38,12 +36,12 @@ const tabs = [
     icon: Smartphone,
     layout: "mobile" as const,
     screenshots: [
-      { src: "/demo/driver-clock-in.png", caption: "Clock in when you're ready to drive" },
+      { src: "/demo/driver-clock-out.png", caption: "Clock out state — ready to start your shift" },
+      { src: "/demo/driver-clock-in.png", caption: "Clock in and see available rides to claim" },
       { src: "/demo/driver-ride-scheduled.png", caption: "One tap to start your next ride" },
       { src: "/demo/driver-ride-on-way.png", caption: "Live updates as you drive to the rider" },
       { src: "/demo/driver-grace-timer.png", caption: "5-minute grace timer protects drivers" },
-      { src: "/demo/driver-my-rides.png", caption: "Today's rides at a glance" },
-      { src: "/demo/driver-account.png", caption: "Quick profile and password management" },
+      { src: "/demo/driver-account.png", caption: "Profile, avatar, and password management" },
     ],
   },
   {
@@ -52,11 +50,10 @@ const tabs = [
     icon: User,
     layout: "mobile" as const,
     screenshots: [
-      { src: "/demo/rider-book-step1.png", caption: "Pick your route from campus locations" },
+      { src: "/demo/rider-book-step1.png", caption: "Pick your pickup and drop-off locations" },
       { src: "/demo/rider-book-step2.png", caption: "Choose your date and time" },
       { src: "/demo/rider-book-step3.png", caption: "Review and confirm in one tap" },
-      { src: "/demo/rider-my-rides.png", caption: "Track all your active rides" },
-      { src: "/demo/rider-grace-timer.png", caption: "Know exactly how long your driver waits" },
+      { src: "/demo/rider-my-rides.png", caption: "Track all your active rides in real time" },
       { src: "/demo/rider-history.png", caption: "Full ride history with trip details" },
     ],
   },
@@ -267,9 +264,9 @@ function MobileGallery({
   onOpen: (idx: number) => void;
 }) {
   return (
-    <div className="grid grid-cols-2 justify-items-center gap-6 sm:grid-cols-3">
+    <div className="flex flex-wrap justify-center gap-6">
       {screenshots.map((shot, i) => (
-        <div key={shot.src}>
+        <div key={shot.src} className="w-[calc(50%-12px)] sm:w-[calc(33.333%-16px)]">
           <PhoneMockup className="cursor-pointer transition-transform hover:scale-[1.02]">
             <div onClick={() => onOpen(i)}>
               <Image

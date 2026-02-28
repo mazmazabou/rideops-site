@@ -1,7 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { ReactNode } from "react";
+import { motion, useInView } from "framer-motion";
+import { ReactNode, useRef, useState, useEffect } from "react";
 
 interface AnimateOnScrollProps {
   children: ReactNode;
@@ -24,13 +24,24 @@ export default function AnimateOnScroll({
   className,
 }: AnimateOnScrollProps) {
   const offset = directionOffsets[direction];
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref, { once: true, margin: "-80px" });
+  const [fallback, setFallback] = useState(false);
+
+  // Fail-safe: if IntersectionObserver never fires, show content after 1s
+  useEffect(() => {
+    const timer = setTimeout(() => setFallback(true), 1000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const show = isInView || fallback;
 
   return (
     <motion.div
+      ref={ref}
       initial={{ opacity: 0, ...offset }}
-      whileInView={{ opacity: 1, x: 0, y: 0 }}
-      viewport={{ once: true, margin: "-80px" }}
-      transition={{ duration: 0.6, delay, ease: "easeOut" }}
+      animate={show ? { opacity: 1, x: 0, y: 0 } : { opacity: 0, ...offset }}
+      transition={{ duration: 0.6, delay: show && !fallback ? delay : 0, ease: "easeOut" }}
       className={className}
     >
       {children}
