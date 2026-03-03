@@ -31,7 +31,7 @@ export default function Home() {
       <FeatureSection
         headline="Find the patterns your staff already suspects"
         body="Top pickup and dropoff locations, busiest routes, demand heatmaps by day and hour. Stop guessing which buildings need coverage — the data shows you."
-        imageSrc="/screenshots/analytics-hotspots.png"
+        imageSrc="/screenshots/analytics-hotspots-v2.png"
         imageAlt="RideOps hotspot analytics showing top pickup and dropoff locations with demand patterns"
         imageWidth={1440}
         imageHeight={900}
