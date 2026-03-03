@@ -5,10 +5,10 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { href: "#features", label: "Features" },
-  { href: "#analytics", label: "Analytics" },
-  { href: "#theming", label: "Theming" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#features", label: "Features" },
+  { href: "/#analytics", label: "Analytics" },
+  { href: "/#theming", label: "Theming" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export default function Navbar() {
@@ -38,17 +38,29 @@ export default function Navbar() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const isHome = () => window.location.pathname === "/";
+
   const scrollToTop = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    if (isHome()) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      e.preventDefault();
+      window.location.href = "/";
+    }
     setMobileOpen(false);
   };
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    e.preventDefault();
-    const target = document.querySelector(href);
-    if (target) {
-      target.scrollIntoView({ behavior: "smooth" });
+    const hash = href.replace("/", "");
+    if (isHome()) {
+      e.preventDefault();
+      const target = document.querySelector(hash);
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      // Let the browser navigate to /#section
     }
     setMobileOpen(false);
   };
@@ -63,7 +75,7 @@ export default function Navbar() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
-        <a href="#" onClick={scrollToTop} className="flex-shrink-0">
+        <a href="/" onClick={scrollToTop} className="flex-shrink-0">
           <div className="flex items-center gap-2">
             <Image
               src="/logoWithoutBackground.png"
