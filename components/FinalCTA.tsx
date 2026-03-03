@@ -10,7 +10,7 @@ export default function FinalCTA() {
           California. Book a 20-minute demo to see how it works for your campus.
         </p>
         <a
-          href="mailto:hello@ride-ops.com"
+          href="/demo"
           className="mt-8 inline-block rounded-lg bg-brand-primary px-8 py-3.5 font-semibold text-white transition-colors hover:bg-brand-dark"
         >
           Book a Demo

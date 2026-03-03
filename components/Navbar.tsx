@@ -99,7 +99,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="mailto:hello@ride-ops.com"
+            href="/demo"
             className="rounded-lg bg-brand-primary px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-dark"
           >
             Book a Demo
@@ -131,7 +131,7 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="mailto:hello@ride-ops.com"
+              href="/demo"
               onClick={() => setMobileOpen(false)}
               className="mt-2 rounded-lg bg-brand-primary px-4 py-2 text-center text-sm font-semibold text-white transition-colors hover:bg-brand-dark"
             >
