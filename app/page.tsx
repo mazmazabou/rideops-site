@@ -3,6 +3,7 @@ import SocialProof from "@/components/SocialProof";
 import FeatureSection from "@/components/FeatureSection";
 import ThemeShowcase from "@/components/ThemeShowcase";
 import FinalCTA from "@/components/FinalCTA";
+import RiderCarousel from "@/components/RiderCarousel";
 
 export default function Home() {
   return (
@@ -10,31 +11,8 @@ export default function Home() {
       <Hero />
       <SocialProof />
 
-      {/* Feature: Dispatch */}
-      <FeatureSection
-        id="features"
-        headline="See your entire day at a glance"
-        body="Live KPI cards show active drivers, pending requests, and completed rides. The schedule grid maps ride chips to driver shift bands so you see exactly who's doing what and when."
-        imageSrc="/screenshots/dispatch-dashboard.png"
-        imageAlt="RideOps dispatch dashboard with live KPI cards and driver schedule grid"
-        imageWidth={1440}
-        imageHeight={900}
-        side="right"
-        frameType="browser"
-      />
-
-      {/* Feature: Rider Experience */}
-      <FeatureSection
-        headline="Riders request in three taps"
-        body="A guided booking wizard walks riders through pickup, dropoff, date, and time. They track their ride status in real time and can cancel if plans change. No phone calls, no email chains."
-        imageSrc="/screenshots/rider-myrides.png"
-        imageAlt="RideOps rider mobile interface showing ride history and status tracking"
-        imageWidth={390}
-        imageHeight={844}
-        side="left"
-        frameType="phone"
-        bgColor="bg-gray-50"
-      />
+      {/* Feature: Rider Carousel */}
+      <RiderCarousel />
 
       {/* Feature: Analytics */}
       <FeatureSection
@@ -64,6 +42,7 @@ export default function Home() {
 
       {/* Feature: Configuration */}
       <FeatureSection
+        id="features"
         headline="Your rules, not ours"
         body="Service hours, grace periods, no-show policies, operating days — all configurable per campus. RideOps enforces your business rules automatically so office staff don't have to."
         imageSrc="/screenshots/settings-panel.png"
@@ -87,6 +66,7 @@ export default function Home() {
         imageHeight={900}
         side="left"
         frameType="browser"
+        bgColor="bg-gray-50"
       />
 
       {/* Final CTA */}

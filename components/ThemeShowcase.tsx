@@ -26,7 +26,7 @@ const themes = [
 
 export default function ThemeShowcase() {
   return (
-    <section id="theming" className="bg-gray-50 py-20 md:py-28">
+    <section id="theming" className="py-24 md:py-36" style={{ backgroundColor: "#F0F5FA" }}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center">
           <h2 className="text-3xl md:text-4xl font-heading text-brand-charcoal">

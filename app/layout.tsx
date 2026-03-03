@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   description:
     "Real-time dispatch, rider booking, driver management, and analytics for university accessibility transportation programs. Built for USC, UCLA, Stanford, and UCI.",
   icons: {
-    icon: "/logoWithBackground.png",
+    icon: "/icon.svg",
     apple: "/logoWithBackground.png",
   },
   openGraph: {
