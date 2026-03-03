@@ -43,14 +43,15 @@ export default function ThemeShowcase() {
           {themes.map((theme) => (
             <div key={theme.label}>
               <BrowserFrame>
-                <Image
-                  src={theme.src}
-                  alt={theme.alt}
-                  width={1440}
-                  height={900}
-                  quality={90}
-                  className="w-full h-auto"
-                />
+                <div className="relative aspect-[16/10]">
+                  <Image
+                    src={theme.src}
+                    alt={theme.alt}
+                    fill
+                    quality={90}
+                    className="object-cover object-top"
+                  />
+                </div>
               </BrowserFrame>
               <p className="text-sm font-medium text-gray-500 mt-3 text-center">
                 {theme.label}
