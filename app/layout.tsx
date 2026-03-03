@@ -18,18 +18,19 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: "RideOps — Campus Transportation, Modernized",
-    template: "%s | RideOps",
-  },
+  metadataBase: new URL("https://ride-ops.com"),
+  title: "RideOps — Campus Transportation Operations Platform",
   description:
-    "RideOps is a multi-tenant SaaS platform that modernizes campus transportation with real-time dispatch, ride tracking, and white-label configurability.",
+    "Real-time dispatch, rider booking, driver management, and analytics for university accessibility transportation programs. Built for USC, UCLA, Stanford, and UCI.",
   icons: {
-    icon: '/logoWithBackground.png',
-    apple: '/logoWithBackground.png',
+    icon: "/logoWithBackground.png",
+    apple: "/logoWithBackground.png",
   },
   openGraph: {
-    images: ['/logoWithBackground.png'],
+    title: "RideOps — Campus Transportation Operations Platform",
+    description:
+      "Real-time dispatch, rider booking, driver management, and analytics for university accessibility transportation programs.",
+    images: ["/screenshots/dispatch-dashboard.png"],
   },
 };
 
