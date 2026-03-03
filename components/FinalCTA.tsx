@@ -1,6 +1,6 @@
 export default function FinalCTA() {
   return (
-    <section id="contact" className="py-20 md:py-28">
+    <section id="contact" className="fade-section py-20 md:py-28">
       <div className="mx-auto max-w-3xl px-6 text-center">
         <h2 className="font-heading text-3xl text-brand-charcoal md:text-4xl">
           Ready to modernize your campus transportation?

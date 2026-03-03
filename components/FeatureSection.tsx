@@ -61,7 +61,7 @@ export default function FeatureSection({
   );
 
   return (
-    <section id={id} className={`py-20 md:py-28 ${bgColor ?? ""}`}>
+    <section id={id} className={`fade-section py-20 md:py-28 ${bgColor ?? ""}`}>
       <div className="max-w-7xl mx-auto px-6">
         <div
           className={`flex flex-col ${

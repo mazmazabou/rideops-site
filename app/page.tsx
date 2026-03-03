@@ -40,13 +40,13 @@ export default function Home() {
         bgColor="bg-gray-50"
       />
 
-      {/* Feature: Configuration */}
+      {/* Feature: Reports */}
       <FeatureSection
         id="features"
-        headline="Your rules, not ours"
-        body="Service hours, grace periods, no-show policies, operating days — all configurable per campus. RideOps enforces your business rules automatically so office staff don't have to."
-        imageSrc="/screenshots/settings-panel.png"
-        imageAlt="RideOps settings panel showing configurable service hours, grace periods, and operating policies"
+        headline="Reports that write themselves"
+        body="Export 8-sheet Excel workbooks with one click — summary, daily volume, routes, driver performance, rider analysis, fleet, shift coverage, and peak hours. Compare semesters side-by-side to spot trends before your next budget meeting."
+        imageSrc="/screenshots/analytics-reports.png"
+        imageAlt="RideOps analytics reports showing exportable Excel workbooks with multi-sheet data analysis"
         imageWidth={1440}
         imageHeight={900}
         side="right"

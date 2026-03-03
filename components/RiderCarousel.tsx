@@ -109,7 +109,7 @@ export default function RiderCarousel() {
   };
 
   return (
-    <section className="py-20 md:py-28 bg-gray-50">
+    <section className="fade-section py-20 md:py-28 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
         {/* Centered text above carousel */}
         <div className="text-center max-w-2xl mx-auto mb-12">
