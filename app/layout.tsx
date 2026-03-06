@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://ride-ops.com"),
   title: "RideOps — Campus Transportation Operations Platform",
   description:
-    "Real-time dispatch, rider booking, driver management, and analytics for university accessibility transportation programs. Built for USC, UCLA, Stanford, and UCI.",
+    "Real-time dispatch, rider booking, driver management, and analytics for university accessibility transportation programs.",
   icons: {
     icon: "/icon.svg",
     apple: "/logoWithBackground.png",

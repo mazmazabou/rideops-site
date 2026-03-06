@@ -30,8 +30,8 @@ const personas = [
     icon: MapPin,
     description:
       "Book accessible transportation, track your driver, and manage your rides in three taps.",
-    screenshot: "/screenshots/rider-booking-where.png",
-    alt: "RideOps rider booking flow on mobile",
+    screenshot: "/screenshots/rider-myrides.png",
+    alt: "RideOps rider My Rides screen showing active ride status",
     frame: "phone" as const,
     width: 390,
     height: 844,

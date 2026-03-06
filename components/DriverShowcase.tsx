@@ -47,32 +47,16 @@ export default function DriverShowcase() {
           </div>
 
           <div className="flex flex-1 justify-center">
-            <div className="relative w-[340px]">
-              <div className="relative z-10">
-                <PhoneFrame className="w-[220px]">
-                  <Image
-                    src="/screenshots/driver-grace-timer.png"
-                    alt="RideOps driver app showing grace period timer for no-show tracking"
-                    width={390}
-                    height={844}
-                    quality={90}
-                    className="h-auto w-full"
-                  />
-                </PhoneFrame>
-              </div>
-              <div className="absolute top-0 left-0 z-5 hidden -translate-y-6 translate-x-20 scale-90 opacity-80 md:block">
-                <PhoneFrame className="w-[220px]">
-                  <Image
-                    src="/screenshots/driver-home-ucla.png"
-                    alt="RideOps driver home screen showing upcoming rides"
-                    width={390}
-                    height={844}
-                    quality={90}
-                    className="h-auto w-full"
-                  />
-                </PhoneFrame>
-              </div>
-            </div>
+            <PhoneFrame className="w-[260px]">
+              <Image
+                src="/screenshots/driver-grace-timer.png"
+                alt="RideOps driver app showing grace period countdown timer for no-show tracking"
+                width={390}
+                height={844}
+                quality={90}
+                className="h-auto w-full"
+              />
+            </PhoneFrame>
           </div>
         </div>
       </div>

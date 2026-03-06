@@ -16,9 +16,9 @@ const steps = [
     label: "2. Pick date & time",
   },
   {
-    src: "/screenshots/rider-myrides.png",
-    alt: "Rider booking step 3: track your ride status",
-    label: "3. Track your ride",
+    src: "/screenshots/rider-step3-confirm.png",
+    alt: "Rider booking step 3: confirm ride request",
+    label: "3. Confirm & go",
   },
 ];
 

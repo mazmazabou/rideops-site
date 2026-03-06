@@ -78,14 +78,24 @@ export default function Home() {
         subtitle="Dashboard, Hotspots, Milestones, Attendance, and Reports — each answers a different question your team is already asking."
         tabs={[
           {
+            label: "Dashboard",
+            src: "/screenshots/analytics-dashboard-uci.png",
+            alt: "RideOps analytics dashboard with KPI widgets, charts, and driver leaderboard",
+          },
+          {
             label: "Hotspots",
             src: "/screenshots/analytics-hotspots.png",
             alt: "RideOps hotspot analytics showing top pickup and dropoff locations",
           },
           {
+            label: "Milestones",
+            src: "/screenshots/analytics-milestones-stanford.png",
+            alt: "RideOps milestones showing driver and rider achievement tracking",
+          },
+          {
             label: "Attendance",
             src: "/screenshots/analytics-attendance.png",
-            alt: "RideOps attendance analytics showing driver shift coverage",
+            alt: "RideOps attendance analytics showing driver clock-in rates and punctuality",
           },
           {
             label: "Reports",
