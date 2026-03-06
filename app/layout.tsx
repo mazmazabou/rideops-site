@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: "RideOps — Campus Transportation Operations Platform",
     description:
       "Real-time dispatch, rider booking, driver management, and analytics for university accessibility transportation programs.",
-    images: ["/screenshots/dispatch-dashboard.png"],
+    images: ["/screenshots/dispatch-board-usc.png"],
   },
 };
 

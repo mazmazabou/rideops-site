@@ -7,7 +7,7 @@ import { Menu, X } from "lucide-react";
 const navLinks = [
   { href: "/#features", label: "Features" },
   { href: "/#analytics", label: "Analytics" },
-  { href: "/#theming", label: "Theming" },
+  { href: "/#story", label: "About" },
   { href: "/#contact", label: "Contact" },
 ];
 
@@ -83,6 +83,7 @@ export default function Navbar() {
               width={28}
               height={28}
               priority
+              quality={90}
               className="object-contain"
             />
             <span

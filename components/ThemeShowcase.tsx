@@ -26,20 +26,26 @@ const themes = [
 
 export default function ThemeShowcase() {
   return (
-    <section id="theming" className="fade-section py-24 md:py-36" style={{ backgroundColor: "#F0F5FA" }}>
-      <div className="max-w-7xl mx-auto px-6">
+    <section
+      id="theming"
+      className="fade-section py-24 md:py-36"
+      style={{ backgroundColor: "#F0F5FA" }}
+    >
+      <div className="mx-auto max-w-7xl px-6">
         <div className="text-center">
-          <h2 className="text-3xl md:text-4xl font-heading text-brand-charcoal">
+          <h2 className="text-3xl font-heading text-brand-charcoal md:text-4xl">
             Your campus, your brand
           </h2>
-          <p className="text-lg text-gray-600 mt-4 leading-relaxed max-w-3xl mx-auto" style={{ lineHeight: 1.7 }}>
-            Every university gets their own colors, terminology, and campus
-            locations. Same platform underneath — completely different experience
-            on top.
+          <p
+            className="mx-auto mt-4 max-w-3xl text-lg leading-relaxed text-gray-600"
+            style={{ lineHeight: 1.7 }}
+          >
+            Every university gets their own colors, logo, and program name. Same
+            platform underneath — completely different experience on top.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 mt-14">
+        <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:gap-8">
           {themes.map((theme) => (
             <div key={theme.label}>
               <BrowserFrame>
@@ -48,12 +54,13 @@ export default function ThemeShowcase() {
                     src={theme.src}
                     alt={theme.alt}
                     fill
+                    sizes="(max-width: 640px) 100vw, 50vw"
                     quality={90}
                     className="object-cover object-top"
                   />
                 </div>
               </BrowserFrame>
-              <p className="text-sm font-medium text-gray-500 mt-3 text-center">
+              <p className="mt-3 text-center text-sm font-medium text-gray-500">
                 {theme.label}
               </p>
             </div>

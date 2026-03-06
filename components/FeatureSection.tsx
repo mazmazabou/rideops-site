@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { CircleCheck } from "lucide-react";
 import BrowserFrame from "./BrowserFrame";
 import PhoneFrame from "./PhoneFrame";
 
@@ -13,6 +14,7 @@ interface FeatureSectionProps {
   side: "left" | "right";
   frameType: "browser" | "phone";
   bgColor?: string;
+  features?: string[];
 }
 
 export default function FeatureSection({
@@ -26,6 +28,7 @@ export default function FeatureSection({
   side,
   frameType,
   bgColor,
+  features,
 }: FeatureSectionProps) {
   const image = (
     <Image
@@ -57,6 +60,16 @@ export default function FeatureSection({
       <p className="text-lg text-gray-600 mt-4 leading-relaxed" style={{ lineHeight: 1.7 }}>
         {body}
       </p>
+      {features && features.length > 0 && (
+        <ul className="mt-6 space-y-3">
+          {features.map((feature) => (
+            <li key={feature} className="flex items-start gap-3">
+              <CircleCheck size={20} className="mt-0.5 shrink-0 text-brand-primary" />
+              <span className="text-base text-gray-600">{feature}</span>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 
