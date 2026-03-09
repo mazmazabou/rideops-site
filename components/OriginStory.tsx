@@ -50,7 +50,7 @@ export default function OriginStory() {
           <div className="shrink-0">
             <div className="h-80 w-64 overflow-hidden rounded-2xl">
               <Image
-                src="/headshotAtUSC.png"
+                src="/headshot.png"
                 alt="Mazen Abouelela, founder of RideOps, at USC"
                 width={256}
                 height={320}

@@ -38,13 +38,13 @@ export default function Footer() {
 
         {/* Nav links */}
         <div className="mt-6 flex flex-wrap justify-center gap-2 text-sm text-gray-500">
-          <a href="#features" className="rounded-md px-3 py-2 transition-colors hover:text-brand-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2">
+          <a href="/#features" className="rounded-md px-3 py-2 transition-colors hover:text-brand-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2">
             Features
           </a>
-          <a href="#analytics" className="rounded-md px-3 py-2 transition-colors hover:text-brand-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2">
+          <a href="/#analytics" className="rounded-md px-3 py-2 transition-colors hover:text-brand-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2">
             Analytics
           </a>
-          <a href="#story" className="rounded-md px-3 py-2 transition-colors hover:text-brand-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2">
+          <a href="/#story" className="rounded-md px-3 py-2 transition-colors hover:text-brand-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2">
             About
           </a>
           <a href="/demo" className="rounded-md px-3 py-2 transition-colors hover:text-brand-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2">
@@ -64,7 +64,7 @@ export default function Footer() {
               hello@ride-ops.com
             </a>
             <a
-              href="https://www.linkedin.com/company/rideops"
+              href="https://www.linkedin.com/in/mazen-abouelela-88a559205/"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-md px-3 py-2 text-sm text-gray-500 transition-colors hover:text-brand-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2"
