@@ -37,7 +37,6 @@ export default function ThemeShowcase() {
           </h2>
           <p
             className="mx-auto mt-4 max-w-3xl text-lg leading-relaxed text-gray-600"
-            style={{ lineHeight: 1.7 }}
           >
             Every university gets their own colors, logo, and program name. Same
             platform underneath — completely different experience on top.
@@ -46,7 +45,7 @@ export default function ThemeShowcase() {
 
         <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:gap-8">
           {themes.map((theme) => (
-            <div key={theme.label}>
+            <div key={theme.label} className="transition-all hover:shadow-lg hover:-translate-y-1">
               <BrowserFrame>
                 <div className="relative aspect-[16/10]">
                   <Image
@@ -54,7 +53,7 @@ export default function ThemeShowcase() {
                     alt={theme.alt}
                     fill
                     sizes="(max-width: 640px) 100vw, 50vw"
-                    quality={90}
+                    quality={80}
                     className="object-cover object-top"
                   />
                 </div>

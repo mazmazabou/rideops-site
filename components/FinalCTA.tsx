@@ -1,3 +1,5 @@
+import { ArrowRight } from "lucide-react";
+
 export default function FinalCTA() {
   return (
     <section
@@ -32,15 +34,16 @@ export default function FinalCTA() {
         </p>
         <a
           href="/demo"
-          className="mt-10 inline-block rounded-lg bg-white px-10 py-4 text-lg font-semibold text-brand-charcoal shadow-lg shadow-white/10 transition-all hover:bg-gray-50 hover:shadow-xl hover:shadow-white/20 hover:-translate-y-0.5"
+          className="group mt-10 inline-flex items-center gap-2 rounded-lg bg-white px-10 py-4 text-lg font-semibold text-brand-charcoal shadow-lg shadow-white/10 transition-all hover:bg-gray-50 hover:shadow-xl hover:shadow-white/20 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand-charcoal"
         >
           Book a Demo
+          <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
         </a>
         <p className="mt-4 text-sm text-gray-400">
           Questions?{" "}
           <a
             href="mailto:hello@ride-ops.com"
-            className="transition-colors hover:text-white"
+            className="transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand-charcoal rounded-sm"
           >
             hello@ride-ops.com
           </a>

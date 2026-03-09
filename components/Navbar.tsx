@@ -67,15 +67,15 @@ export default function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-50 transition-all duration-300 ${
+      className={`sticky top-3 z-50 mx-4 rounded-2xl transition-all duration-300 ${
         scrolled
-          ? "border-b border-gray-200/60 bg-white/80 shadow-sm backdrop-blur-md"
+          ? "border border-gray-200/60 bg-white/80 shadow-lg shadow-gray-200/40 backdrop-blur-md"
           : "bg-white/80 backdrop-blur-md"
       }`}
     >
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
         {/* Logo */}
-        <a href="/" onClick={scrollToTop} className="flex-shrink-0">
+        <a href="/" onClick={scrollToTop} className="flex-shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2 rounded-md">
           <div className="flex items-center gap-2">
             <Image
               src="/logoWithoutBackground.png"
@@ -106,14 +106,14 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               onClick={(e) => handleNavClick(e, link.href)}
-              className="text-sm font-medium text-brand-charcoal transition-colors hover:text-brand-primary"
+              className="rounded-md text-sm font-medium text-brand-charcoal transition-colors hover:text-brand-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2"
             >
               {link.label}
             </a>
           ))}
           <a
             href="/demo"
-            className="rounded-lg bg-brand-primary px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-dark"
+            className="rounded-lg bg-brand-primary px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2"
           >
             Book a Demo
           </a>
@@ -122,7 +122,7 @@ export default function Navbar() {
         {/* Mobile hamburger */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="text-brand-charcoal md:hidden"
+          className="rounded-md p-1 text-brand-charcoal md:hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2"
           aria-label="Toggle menu"
         >
           {mobileOpen ? <X size={24} /> : <Menu size={24} />}
@@ -131,14 +131,14 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="border-t border-gray-200/60 bg-white px-6 pb-6 md:hidden">
+        <div className="mobile-menu-enter border-t border-gray-200/60 bg-white/95 backdrop-blur-md px-6 pb-6 md:hidden rounded-b-2xl">
           <div className="flex flex-col gap-4 pt-4">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
-                className="text-sm font-medium text-brand-charcoal transition-colors hover:text-brand-primary"
+                className="rounded-md text-sm font-medium text-brand-charcoal transition-colors hover:text-brand-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2"
               >
                 {link.label}
               </a>
@@ -146,7 +146,7 @@ export default function Navbar() {
             <a
               href="/demo"
               onClick={() => setMobileOpen(false)}
-              className="mt-2 rounded-lg bg-brand-primary px-4 py-2 text-center text-sm font-semibold text-white transition-colors hover:bg-brand-dark"
+              className="mt-2 rounded-lg bg-brand-primary px-4 py-2 text-center text-sm font-semibold text-white transition-colors hover:bg-brand-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2"
             >
               Book a Demo
             </a>

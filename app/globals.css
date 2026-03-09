@@ -43,3 +43,56 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .fade-section {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .hero-stagger {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+}
+
+/* Hero staggered entrance animation */
+@keyframes hero-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-stagger {
+  opacity: 0;
+  animation: hero-fade-up 0.7s ease-out forwards;
+}
+
+.hero-stagger-1 { animation-delay: 0s; }
+.hero-stagger-2 { animation-delay: 0.15s; }
+.hero-stagger-3 { animation-delay: 0.3s; }
+.hero-stagger-4 { animation-delay: 0.5s; }
+
+/* Mobile menu slide-down */
+.mobile-menu-enter {
+  animation: menu-slide-down 0.25s ease-out forwards;
+}
+
+@keyframes menu-slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

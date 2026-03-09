@@ -7,6 +7,8 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollFadeObserver from "@/components/ScrollFadeObserver";
+import ScrollProgress from "@/components/ScrollProgress";
+import BackToTop from "@/components/BackToTop";
 
 const dmSerifDisplay = DM_Serif_Display({
   variable: "--font-dm-serif-display",
@@ -32,7 +34,7 @@ export const metadata: Metadata = {
     title: "RideOps — Campus Transportation Operations Platform",
     description:
       "Real-time dispatch, rider booking, driver management, and analytics for university accessibility transportation programs.",
-    images: ["/screenshots/dispatch-board-usc.png"],
+    images: ["/og-image.png"],
   },
 };
 
@@ -55,10 +57,12 @@ export default function RootLayout({
       <body
         className={`${dmSerifDisplay.variable} ${dmSans.variable} antialiased`}
       >
+        <ScrollProgress />
         <Navbar />
         <main>{children}</main>
         <Footer />
         <ScrollFadeObserver />
+        <BackToTop />
         <Analytics />
         <SpeedInsights />
       </body>

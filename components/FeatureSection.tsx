@@ -36,7 +36,7 @@ export default function FeatureSection({
       alt={imageAlt}
       width={imageWidth}
       height={imageHeight}
-      quality={90}
+      quality={80}
       className="w-full h-auto"
     />
   );
@@ -57,7 +57,7 @@ export default function FeatureSection({
       <h2 className="text-3xl md:text-4xl font-heading text-brand-charcoal">
         {headline}
       </h2>
-      <p className="text-lg text-gray-600 mt-4 leading-relaxed" style={{ lineHeight: 1.7 }}>
+      <p className="text-lg text-gray-600 mt-4 leading-relaxed">
         {body}
       </p>
       {features && features.length > 0 && (

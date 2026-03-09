@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 import BrowserFrame from "./BrowserFrame";
 
 export default function Hero() {
@@ -24,31 +25,32 @@ export default function Hero() {
       />
 
       <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
-        <h1 className="text-4xl leading-tight font-heading text-brand-charcoal md:text-5xl lg:text-6xl">
+        <h1 className="hero-stagger hero-stagger-1 text-4xl leading-tight font-heading text-brand-charcoal md:text-5xl lg:text-6xl">
           Campus transportation ops, finally under control.
         </h1>
-        <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-600 md:text-xl">
+        <p className="hero-stagger hero-stagger-2 mx-auto mt-6 max-w-2xl text-lg text-gray-600 md:text-xl">
           RideOps replaces radio calls, spreadsheets, and guesswork with a
           real-time dispatch platform built for university accessibility
           programs.
         </p>
-        <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+        <div className="hero-stagger hero-stagger-3 mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
             href="/demo"
-            className="rounded-lg bg-brand-primary px-8 py-3.5 text-base font-semibold text-white transition-colors hover:bg-brand-dark"
+            className="group inline-flex items-center gap-2 rounded-lg bg-brand-primary px-8 py-3.5 text-base font-semibold text-white transition-colors hover:bg-brand-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2"
           >
             Book a Demo
+            <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
           </a>
           <a
             href="#features"
-            className="rounded-lg border-2 border-brand-primary px-8 py-3.5 text-base font-semibold text-brand-primary transition-colors hover:bg-brand-primary hover:text-white"
+            className="rounded-lg border-2 border-brand-primary px-8 py-3.5 text-base font-semibold text-brand-primary transition-colors hover:bg-brand-primary hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2"
           >
             See How It Works
           </a>
         </div>
       </div>
 
-      <div className="relative z-10 mx-auto mt-12 max-w-6xl px-6 md:mt-16">
+      <div className="hero-stagger hero-stagger-4 relative z-10 mx-auto mt-12 max-w-6xl px-6 md:mt-16">
         <BrowserFrame>
           <Image
             src="/screenshots/dispatch-board-usc.png"

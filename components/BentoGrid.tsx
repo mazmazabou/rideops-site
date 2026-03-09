@@ -32,7 +32,7 @@ export default function BentoGrid() {
           {cards.map((card) => (
             <div
               key={card.title}
-              className="overflow-hidden rounded-xl border border-gray-200 bg-white"
+              className="overflow-hidden rounded-xl border border-gray-200 bg-white transition-all hover:border-gray-300 hover:shadow-lg hover:-translate-y-1"
             >
               <div className="p-6">
                 <h3 className="text-lg font-semibold text-brand-charcoal">
@@ -49,7 +49,7 @@ export default function BentoGrid() {
                     alt={card.alt}
                     width={1920}
                     height={1080}
-                    quality={90}
+                    quality={80}
                     className="h-auto w-full"
                   />
                 </BrowserFrame>

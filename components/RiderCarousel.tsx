@@ -87,7 +87,7 @@ export default function RiderCarousel() {
           <h2 className="text-3xl font-heading text-brand-charcoal md:text-4xl">
             Riders book in three taps
           </h2>
-          <p className="mt-4 text-lg leading-relaxed text-gray-600" style={{ lineHeight: 1.7 }}>
+          <p className="mt-4 text-lg leading-relaxed text-gray-600">
             A guided wizard walks riders through pickup, dropoff, and
             scheduling. Real-time status updates and direct driver messaging. No
             phone calls, no email chains.
@@ -115,7 +115,7 @@ export default function RiderCarousel() {
                     alt={step.alt}
                     width={390}
                     height={844}
-                    quality={90}
+                    quality={80}
                     className="h-auto w-full"
                   />
                 </PhoneFrame>
@@ -146,7 +146,7 @@ export default function RiderCarousel() {
                       alt={step.alt}
                       width={390}
                       height={844}
-                      quality={90}
+                      quality={80}
                       className="h-auto w-full"
                     />
                   </PhoneFrame>
@@ -158,7 +158,7 @@ export default function RiderCarousel() {
             ))}
           </div>
 
-          <div className="mt-4 flex justify-center gap-2">
+          <div className="mt-4 flex justify-center gap-1">
             {steps.map((step, i) => (
               <button
                 key={step.label}
@@ -168,10 +168,14 @@ export default function RiderCarousel() {
                   pausedRef.current = false;
                   resetTimer();
                 }}
-                className={`h-2.5 w-2.5 rounded-full transition-colors ${
-                  i === active ? "bg-brand-primary" : "bg-gray-300"
-                }`}
-              />
+                className="flex h-11 w-11 cursor-pointer items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2 rounded-full"
+              >
+                <span
+                  className={`block h-2.5 w-2.5 rounded-full transition-colors ${
+                    i === active ? "bg-brand-primary" : "bg-gray-300"
+                  }`}
+                />
+              </button>
             ))}
           </div>
         </div>

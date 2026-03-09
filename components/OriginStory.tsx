@@ -19,7 +19,7 @@ export default function OriginStory() {
           </h2>
         </div>
 
-        <p className="mt-8 text-lg leading-relaxed text-gray-600" style={{ lineHeight: 1.7 }}>
+        <p className="mt-8 text-lg leading-relaxed text-gray-600">
           RideOps started at USC, where the DART program — Disabled Access to
           Road Transportation — moves students with disabilities across campus by
           golf cart. The program ran on a messy Google Calendar with ride details
@@ -54,7 +54,7 @@ export default function OriginStory() {
                 alt="Mazen Abouelela, founder of RideOps, at USC"
                 width={256}
                 height={320}
-                quality={90}
+                quality={80}
                 className="h-full w-full object-cover"
               />
             </div>
@@ -63,7 +63,7 @@ export default function OriginStory() {
             <p className="text-sm font-semibold uppercase tracking-widest text-brand-primary">
               Meet the Founder
             </p>
-            <p className="mt-4 text-lg leading-relaxed text-gray-600" style={{ lineHeight: 1.7 }}>
+            <p className="mt-4 text-lg leading-relaxed text-gray-600">
               RideOps was founded by Mazen Abouelela, a USC graduate who saw
               firsthand how campus accessibility programs struggled with outdated
               tools. What started as a solution for USC&apos;s DART program is now a

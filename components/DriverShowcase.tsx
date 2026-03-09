@@ -26,7 +26,7 @@ export default function DriverShowcase() {
             <h2 className="text-3xl font-heading text-brand-charcoal md:text-4xl">
               Drivers stay focused, not frustrated
             </h2>
-            <p className="mt-4 text-lg leading-relaxed text-gray-600" style={{ lineHeight: 1.7 }}>
+            <p className="mt-4 text-lg leading-relaxed text-gray-600">
               A purpose-built mobile app that keeps it simple.
             </p>
             <ul className="mt-8 space-y-5">
@@ -47,16 +47,32 @@ export default function DriverShowcase() {
           </div>
 
           <div className="flex flex-1 justify-center">
-            <PhoneFrame className="w-[260px]">
-              <Image
-                src="/screenshots/driver-grace-timer.png"
-                alt="RideOps driver app showing grace period countdown timer for no-show tracking"
-                width={390}
-                height={844}
-                quality={90}
-                className="h-auto w-full"
-              />
-            </PhoneFrame>
+            <div className="relative">
+              {/* Primary phone — grace timer */}
+              <PhoneFrame className="relative z-10 w-[240px]">
+                <Image
+                  src="/screenshots/driver-grace-timer.png"
+                  alt="RideOps driver app showing grace period countdown timer for no-show tracking"
+                  width={390}
+                  height={844}
+                  quality={80}
+                  className="h-auto w-full"
+                />
+              </PhoneFrame>
+              {/* Secondary phone — driver home, offset behind */}
+              <div className="absolute -right-16 top-8 -z-0 hidden md:block">
+                <PhoneFrame className="w-[200px] opacity-80">
+                  <Image
+                    src="/screenshots/driver-home-ucla.png"
+                    alt="RideOps driver app home screen showing upcoming rides and shift status"
+                    width={390}
+                    height={844}
+                    quality={80}
+                    className="h-auto w-full"
+                  />
+                </PhoneFrame>
+              </div>
+            </div>
           </div>
         </div>
       </div>

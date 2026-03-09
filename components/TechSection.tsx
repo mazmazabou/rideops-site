@@ -47,7 +47,7 @@ export default function TechSection() {
           <h2 className="text-3xl font-heading text-brand-charcoal md:text-4xl">
             Enterprise-ready from day one
           </h2>
-          <p className="mt-4 text-lg leading-relaxed text-gray-600" style={{ lineHeight: 1.7 }}>
+          <p className="mt-4 text-lg leading-relaxed text-gray-600">
             Built with the security and integration standards university IT
             teams expect.
           </p>
@@ -59,7 +59,7 @@ export default function TechSection() {
             return (
               <div
                 key={card.title}
-                className="rounded-xl border border-gray-200 bg-white p-6"
+                className="rounded-xl border border-gray-200 bg-white p-6 transition-shadow hover:shadow-md"
               >
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-light">
                   <Icon size={20} className="text-brand-primary" />

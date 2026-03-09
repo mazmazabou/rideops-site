@@ -46,7 +46,7 @@ export default function PersonaCards() {
           <h2 className="text-3xl font-heading text-brand-charcoal md:text-4xl">
             One platform, three apps
           </h2>
-          <p className="mt-4 text-lg leading-relaxed text-gray-600" style={{ lineHeight: 1.7 }}>
+          <p className="mt-4 text-lg leading-relaxed text-gray-600">
             Coordinators dispatch from the web. Drivers manage rides on their
             phone. Riders book in three taps. Everyone stays in sync.
           </p>
@@ -58,7 +58,7 @@ export default function PersonaCards() {
             return (
               <div
                 key={persona.title}
-                className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
+                className="cursor-pointer rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
               >
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-light">
@@ -71,7 +71,7 @@ export default function PersonaCards() {
                 <p className="mt-3 text-sm leading-relaxed text-gray-600">
                   {persona.description}
                 </p>
-                <div className="mt-4 max-h-[240px] overflow-hidden rounded-lg">
+                <div className="mt-4 max-h-[320px] overflow-hidden rounded-lg">
                   {persona.frame === "browser" ? (
                     <BrowserFrame>
                       <Image
@@ -79,7 +79,7 @@ export default function PersonaCards() {
                         alt={persona.alt}
                         width={persona.width}
                         height={persona.height}
-                        quality={90}
+                        quality={80}
                         className="h-auto w-full"
                       />
                     </BrowserFrame>
@@ -90,7 +90,7 @@ export default function PersonaCards() {
                         alt={persona.alt}
                         width={persona.width}
                         height={persona.height}
-                        quality={90}
+                        quality={80}
                         className="h-auto w-full rounded-xl"
                       />
                     </div>
