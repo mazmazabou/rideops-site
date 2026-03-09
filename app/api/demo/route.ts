@@ -46,7 +46,7 @@ export async function POST(request: Request) {
 
   const htmlBody = `
     <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 600px; margin: 0 auto;">
-      <h2 style="color: #4682B4; margin-bottom: 24px;">New Demo Request</h2>
+      <h2 style="color: #2563EB; margin-bottom: 24px;">New Demo Request</h2>
       <table style="width: 100%; border-collapse: collapse;">
         <tr>
           <td style="padding: 12px 16px; border-bottom: 1px solid #eee; color: #666; width: 140px;">Name</td>

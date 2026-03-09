@@ -28,8 +28,7 @@ export default function ThemeShowcase() {
   return (
     <section
       id="theming"
-      className="fade-section py-24 md:py-36"
-      style={{ backgroundColor: "#F0F5FA" }}
+      className="fade-section bg-brand-light/50 py-24 md:py-36"
     >
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center">

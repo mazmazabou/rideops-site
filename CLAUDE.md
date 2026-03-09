@@ -75,9 +75,9 @@ Campus-specific screenshots rotated across sections:
 
 ## Color System
 Defined in `globals.css` via `@theme inline`:
-- `--color-brand-primary: #4682B4` (SteelBlue)
-- `--color-brand-dark: #36648B`
-- `--color-brand-light: #EEF3F8`
+- `--color-brand-primary: #2563EB` (Tailwind blue-600)
+- `--color-brand-dark: #1D4ED8` (Tailwind blue-700)
+- `--color-brand-light: #EFF6FF` (Tailwind blue-50)
 - `--color-brand-charcoal: #1a1a2e`
 
 ## Anchor Navigation

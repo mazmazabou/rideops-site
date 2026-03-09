@@ -104,7 +104,7 @@ export default function RiderCarousel() {
                   width: 220,
                   boxShadow:
                     idx === active
-                      ? "0 0 0 3px rgba(70, 130, 180, 0.4)"
+                      ? "0 0 0 3px rgba(37, 99, 235, 0.4)"
                       : "none",
                   borderRadius: "2.5rem",
                 }}

@@ -40,7 +40,7 @@ const personas = [
 
 export default function PersonaCards() {
   return (
-    <section className="fade-section py-20 md:py-28">
+    <section className="fade-section bg-brand-light/30 py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-heading text-brand-charcoal md:text-4xl">

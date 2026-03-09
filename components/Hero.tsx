@@ -3,8 +3,27 @@ import BrowserFrame from "./BrowserFrame";
 
 export default function Hero() {
   return (
-    <section className="bg-gradient-to-b from-brand-light/50 via-brand-light/20 to-white py-24 md:py-32">
-      <div className="mx-auto max-w-4xl px-6 text-center">
+    <section className="relative overflow-hidden bg-gradient-to-b from-brand-light/50 via-brand-light/20 to-white py-24 md:py-32">
+      {/* Soft radial glow */}
+      <div
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background: `
+            radial-gradient(ellipse 80% 60% at 50% 30%, rgba(37, 99, 235, 0.06), transparent),
+            radial-gradient(ellipse 50% 40% at 80% 70%, rgba(37, 99, 235, 0.03), transparent)
+          `,
+        }}
+      />
+      {/* Faint dot pattern */}
+      <div
+        className="pointer-events-none absolute inset-0 opacity-[0.03]"
+        style={{
+          backgroundImage: 'radial-gradient(circle, #2563EB 1px, transparent 1px)',
+          backgroundSize: '24px 24px',
+        }}
+      />
+
+      <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
         <h1 className="text-4xl leading-tight font-heading text-brand-charcoal md:text-5xl lg:text-6xl">
           Campus transportation ops, finally under control.
         </h1>
@@ -29,7 +48,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="mx-auto mt-12 max-w-6xl px-6 md:mt-16">
+      <div className="relative z-10 mx-auto mt-12 max-w-6xl px-6 md:mt-16">
         <BrowserFrame>
           <Image
             src="/screenshots/dispatch-board-usc.png"

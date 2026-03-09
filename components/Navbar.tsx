@@ -93,7 +93,7 @@ export default function Navbar() {
                 letterSpacing: "-0.3px",
               }}
             >
-              <span style={{ color: "#4682B4" }}>Ride</span>
+              <span style={{ color: "#2563EB" }}>Ride</span>
               <span style={{ color: "#1a1a2e" }}>Ops</span>
             </span>
           </div>

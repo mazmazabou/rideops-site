@@ -2,9 +2,27 @@ export default function FinalCTA() {
   return (
     <section
       id="contact"
-      className="fade-section bg-gradient-to-br from-brand-charcoal to-[#2a2a4e] py-20 md:py-28"
+      className="fade-section relative overflow-hidden bg-gradient-to-br from-brand-charcoal to-[#2a2a4e] py-24 md:py-32"
     >
-      <div className="mx-auto max-w-3xl px-6 text-center">
+      {/* Top transition line */}
+      <div className="pointer-events-none absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+      {/* Subtle dot pattern */}
+      <div
+        className="pointer-events-none absolute inset-0 opacity-[0.04]"
+        style={{
+          backgroundImage: 'radial-gradient(circle, #ffffff 1px, transparent 1px)',
+          backgroundSize: '20px 20px',
+        }}
+      />
+      {/* Centered blue glow */}
+      <div
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background: 'radial-gradient(ellipse 60% 50% at 50% 50%, rgba(37, 99, 235, 0.12), transparent)',
+        }}
+      />
+
+      <div className="relative z-10 mx-auto max-w-3xl px-6 text-center">
         <h2 className="text-3xl font-heading text-white md:text-4xl">
           Ready to modernize your campus transportation?
         </h2>
@@ -14,7 +32,7 @@ export default function FinalCTA() {
         </p>
         <a
           href="/demo"
-          className="mt-8 inline-block rounded-lg bg-white px-8 py-3.5 font-semibold text-brand-charcoal transition-colors hover:bg-gray-100"
+          className="mt-10 inline-block rounded-lg bg-white px-10 py-4 text-lg font-semibold text-brand-charcoal shadow-lg shadow-white/10 transition-all hover:bg-gray-50 hover:shadow-xl hover:shadow-white/20 hover:-translate-y-0.5"
         >
           Book a Demo
         </a>
