@@ -31,10 +31,19 @@ export const metadata: Metadata = {
     apple: "/logoWithBackground.png",
   },
   openGraph: {
+    type: "website",
+    siteName: "RideOps",
     title: "RideOps — Campus Transportation Operations Platform",
     description:
       "Real-time dispatch, rider booking, driver management, and analytics for university accessibility transportation programs.",
+    url: "https://ride-ops.com",
     images: ["/og-image.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "RideOps — Campus Transportation Operations Platform",
+    description:
+      "Real-time dispatch, rider booking, driver management, and analytics for university accessibility transportation programs.",
   },
 };
 

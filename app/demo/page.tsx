@@ -5,6 +5,19 @@ export const metadata: Metadata = {
   title: "Book a Demo — RideOps",
   description:
     "Schedule a 20-minute demo to see how RideOps modernizes campus transportation operations with real-time dispatch, rider booking, and analytics.",
+  openGraph: {
+    type: "website",
+    title: "Book a Demo — RideOps",
+    description:
+      "Schedule a 20-minute demo to see how RideOps modernizes campus transportation operations with real-time dispatch, rider booking, and analytics.",
+    url: "https://ride-ops.com/demo",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Book a Demo — RideOps",
+    description:
+      "Schedule a 20-minute demo to see how RideOps modernizes campus transportation operations with real-time dispatch, rider booking, and analytics.",
+  },
 };
 
 export default function DemoPage() {
