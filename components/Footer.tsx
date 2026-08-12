@@ -64,14 +64,6 @@ export default function Footer() {
               hello@ride-ops.com
             </a>
             <a
-              href="https://www.linkedin.com/in/mazen-abouelela-88a559205/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-md px-3 py-2 text-sm text-gray-500 transition-colors hover:text-brand-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2"
-            >
-              LinkedIn
-            </a>
-            <a
               href="https://app.ride-ops.com"
               target="_blank"
               rel="noopener noreferrer"
