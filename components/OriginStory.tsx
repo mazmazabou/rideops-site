@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const values = [
   "Accountability, not surveillance",
   "Built for universities, not rideshare",
@@ -46,31 +44,17 @@ export default function OriginStory() {
 
         <hr className="my-16 border-gray-200" />
 
-        <div className="flex flex-col items-center gap-10 md:flex-row md:items-start">
-          <div className="shrink-0">
-            <div className="h-80 w-64 overflow-hidden rounded-2xl">
-              <Image
-                src="/headshot.png"
-                alt="Mazen Abouelela, founder of RideOps, at USC"
-                width={256}
-                height={320}
-                quality={80}
-                className="h-full w-full object-cover"
-              />
-            </div>
-          </div>
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-widest text-brand-primary">
-              Meet the Founder
-            </p>
-            <p className="mt-4 text-lg leading-relaxed text-gray-600">
-              RideOps was founded by Mazen Abouelela, a USC graduate who saw
-              firsthand how campus accessibility programs struggled with outdated
-              tools. What started as a solution for USC&apos;s DART program is now a
-              white-label platform built to serve campuses across the United
-              States.
-            </p>
-          </div>
+        <div className="text-center md:text-left">
+          <p className="text-sm font-semibold uppercase tracking-widest text-brand-primary">
+            Built From the Inside
+          </p>
+          <p className="mt-4 text-lg leading-relaxed text-gray-600">
+            RideOps was built by someone who ran one of these programs — sitting
+            in the dispatch seat, coordinating golf carts by radio, and tracking
+            rides on paper. It&apos;s the tool that office needed. What started as a
+            solution for one campus accessibility program is now a white-label
+            platform built to serve campuses across the United States.
+          </p>
         </div>
       </div>
     </section>
